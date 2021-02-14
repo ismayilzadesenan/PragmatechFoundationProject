@@ -1,0 +1,2 @@
+# pragmatechfoundationproject
+kodlar icmali
