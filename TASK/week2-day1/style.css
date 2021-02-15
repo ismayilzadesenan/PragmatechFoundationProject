@@ -1,0 +1,17 @@
+#main-box{
+    border: 1px solid black;
+}
+div{
+    background-color: bisque;
+border: 1px solid green;
+width: 50%;
+}
+.lorem-size{
+font-size: 20px;
+}
+.lorem-color{
+color: green;
+}
+.font-family p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
