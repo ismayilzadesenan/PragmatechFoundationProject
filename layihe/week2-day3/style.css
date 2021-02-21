@@ -28,16 +28,11 @@ box-sizing: border-box;
 #main{
     box-sizing: border-box;
     color: #303036;
-    border: 2px solid black;
     width: 1350px;
 }
 
 .main-logo{
-  border: 2px solid red;
-}
-.main-logo>span{
-    font-size: 18px;
-    margin-right: -125px;
+ 
 }
 .main-header ul{
 list-style: none;
@@ -63,7 +58,8 @@ li{
 }
 
 .main-header{
-    padding: 25px 0;
+    padding: 12px 0;
+    border: 2px solid red;
 }
 i{
     padding-left: 8px;
@@ -73,7 +69,10 @@ i{
     color: #2c7ae7;
 
 }
-
+#main span{
+    position: relative;
+    margin-left: -80px;
+}
 
 
 

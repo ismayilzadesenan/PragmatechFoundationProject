@@ -1,18 +1,18 @@
 body{
     margin:0px;
     font-family: "Istok Web",sans-serif;
-    font-size: 1rem;
+   
 }
 #tb{
-    
-    background-color: #303036;
-    padding: 10px 0;
+    width: 1350.5px;
+     background-color: #303036;
+    padding: 14px 0;
     color: rgba(255,255,255,.8);
-   
+   overflow: scroll; 
 }
 
 .tb-container{
-    
+ 
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
@@ -20,16 +20,14 @@ body{
 }
 .tb-contact-info i{
     margin-right: 10px;
-    font-size: 1rem;
-    height: 1rem;
-    width: 1rem;
+    font-size: 14px;
     color: #fff;
 }
     
 
  .tb-social-icons i{
     margin-right: 5px;
-    font-size: 1rem;
+    font-size: 16px;
     height: 1rem;
     width: 1rem;
     
