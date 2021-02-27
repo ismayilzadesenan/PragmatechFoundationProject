@@ -1,27 +1,32 @@
-.con{
+.container{
     width: 1110px;
     margin: 0 auto;
-
+    border: 1px solid red;
+    height: 500px;
+    box-sizing: border-box;
 }
 .row{
     display: flex;
     justify-content: space-between;
+
+}
+.col{
+    padding: 80px 0;
 }
 .col-1{
 width: calc(100%/12*1);
+
 }
 .col-2{
-    width: calc(100%/12*2);
+    width: calc(100%/12*2);margin: 0%;
 }
 .col-3{
-    width: calc(100%/12*3);
+    width: calc(100%/12*3);margin: 0%;
 }
 .col-4{
     width: calc(100%/12*4);
-  border: 2px solid lightblue;
-    margin:0 15px;
-    border-radius: 10px;
-    margin-bottom: 45px;
+    border: 1px solid black;
+ 
 }
 .col-5{
     width: calc(100%/12*5);
