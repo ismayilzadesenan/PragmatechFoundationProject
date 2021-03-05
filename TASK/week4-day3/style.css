@@ -4,13 +4,14 @@ body{
     color: rgba(255,255,255,.8);
     line-height: 1.625;
     font-weight: 400;
-    
+
     margin: 0;
     padding: 0;
 }
 *{
     box-sizing: border-box;
     margin: 0;
+    list-style: none;
     padding: 0;
 }
 /* top bar start */
@@ -271,3 +272,88 @@ opacity: 1;
         padding-left: 60px;
     }
     /* some reason end */
+    /* our work start */
+    .project-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+     
+     
+    }
+    .our-work{
+     margin-bottom: 45px;
+     
+    }
+    .project-type li{
+        margin-right: 24px;
+        padding: 2px 5px;
+    }
+    .project-type li a{
+        text-decoration: none;
+   color:#303036;
+    }
+    .project-type li a:hover{
+        color: #2c7ae7;
+    }
+    
+    .our-work-item-picture img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+transition: all .6s ease-in;
+       
+    }
+    .our-work-item-picture{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 400px;
+        transition:all .6s ease;
+      z-index: 2;
+    
+    }
+    .transform-div{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transition:all .6s ease;
+    z-index: 1;
+    
+       
+    }
+    .link a{
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .our-work-item{
+        position:relative;
+        margin-bottom: 35px;
+        box-shadow: 2px 2px 2px 2px gray;
+        border-radius: 10px;
+    }
+    .our-work-item:hover .our-work-item-picture{
+        transform: rotateY(180deg);
+      
+    }
+    .our-work-item:hover .transform-div{
+       
+        transform: rotateY(180deg);
+        z-index: 2;
+        text-transform:none;
+   
+    }
+
+  
+    /* our work end */
