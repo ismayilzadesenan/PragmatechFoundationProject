@@ -354,6 +354,56 @@ transition: all .6s ease-in;
         text-transform:none;
    
     }
+    /* <!-- meet team start --> */
+    .meet-team-item{
+        height: 270px;
+        background-color: #f0f4f8;
+    }
+    .meet-team-item:hover  .meet-team-social{
+opacity: 1;
+transition: all .25s;
+    }
+    .meet-team-image img {
+width: 100%;
+height: 270px;
+object-fit: cover;
+border-top-right-radius: .625rem;
+border-top-left-radius: .625rem;
+    }
+    .meet-team-about{
+        position: relative;
+        padding: 24px 16px 16px 16px;
+        text-align: center;
+    }
+    .meet-team-social{
+        position: absolute;
+        left: 50%;
+        top: -28px;
+        transform: translateX(-50%);
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        fill: #fff;
+        transition: all .25s;
+    }
+    .meet-team-social>i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: .375rem;
+        background-color: #2c7ae7;
+        transition: all .25s;
+        fill: white;
+        color: white;
+        border: 1px solid #2c7ae7;
+        margin: 5px;
+    }
 
-  
+
+
+    /* <!-- meet team finish --> */
     /* our work end */
