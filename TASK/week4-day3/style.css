@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
     margin: 0;
     list-style: none;
     padding: 0;
@@ -358,6 +358,7 @@ transition: all .6s ease-in;
     .meet-team-item{
         height: 270px;
         background-color: #f0f4f8;
+        height: 100%;
     }
     .meet-team-item:hover  .meet-team-social{
 opacity: 1;
@@ -406,4 +407,43 @@ border-top-left-radius: .625rem;
 
 
     /* <!-- meet team finish --> */
-    /* our work end */
+    /*  our cliet finish*/
+    .cliet-header-item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: .625rem;
+        overflow: hidden;
+        color: #303036;
+        transition: all .25s;
+    
+    }
+    .cliet-header{
+        padding: 32px 20px;
+        border: 1px solid #d4d4e1;
+        border-radius: 10px;
+        transition: all .8s ease;
+        height: 100%;
+        
+ 
+    }
+    .cliet-header-item img{
+        margin-right: 20px;
+    }
+    .cliet-header-about{
+        text-align:left;
+font-size: 1rem;
+color: #63636b;
+line-height: 1.625;
+    font-family: "Istok Web",sans-serif;
+    font-weight: 400;
+    }
+    .cliet-header:hover {
+        box-shadow: 0.125rem 0.25rem 1.25rem 0.0875rem rgb(45 45 45 / 13%);
+   
+    }
+
+    /* our cliet end */
+   
