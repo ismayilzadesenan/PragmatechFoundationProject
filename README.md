@@ -1,2 +1,1 @@
-# pragmatechfoundationproject
-kodlar icmali
+[PROJECT TEMPLATE] https://www.templatemonsterpreview.com/demo/83414.html
