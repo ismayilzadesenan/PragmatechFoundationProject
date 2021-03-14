@@ -138,7 +138,6 @@ img {
     left: 0;
     top: 0;
     transform: translateY(-100%);
-   
     width: 100%;
     transition: all .4s;
     color: #2c7ae7;
@@ -156,18 +155,19 @@ img {
     top: 100%;
     background-color: #fff;
     box-shadow: 0.125rem 0.25rem 1.25rem 0.0875rem rgb(45 45 45 / 13%);
-    min-width: 200px;
+    min-width: 160px;
     font-weight: 400;
-    opacity: 0;
+   display: none;
     padding: .75rem 0;
-    transition: all .2s .2s;
+    transition: all 10s ease-in;
     cursor: default;
 }
 .menu-list-item>li>ul>li{
     padding: 8px 25px;
 }
-.menu-list-link span:hover .open-menu{
-    opacity: 1;
+
+.menu-list-item li a:hover~ul{
+    display: block;
 }
 
 
