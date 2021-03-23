@@ -60,6 +60,8 @@ body{
 /* menu list start */
 #header-menu{
     padding: 10px 0;
+   position: relative;
+   z-index: 15;
 }
 .logo.logo-ico-widht-text {
     display: flex;
@@ -80,6 +82,10 @@ body{
     height: 55px;
     font-weight: 700;
 }
+a{
+    text-decoration: none;
+    color: #303036;
+}
 .logo .logo-ico {
     margin-right: 10px;
 }
@@ -92,84 +98,78 @@ img {
     vertical-align: middle;
     border-style: none;
 }
-.menu-list{
+.menu-list-item{
     display: flex;
     justify-content: flex-end;
 }
-.menu-list-item{
-    display: flex;
-    list-style: none;
-    
-
+.open-menu{
+    position: absolute;
+    top: 45px;
+    background-color: white;
+    display: none;
+    transition: all 2sn ease;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightblue;
 }
-.menu-list-item>li{
-    margin-left: 30px;
-    padding: 16px 0;
+.menu-list{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-list li{
+    margin: 0 10px;
+    padding: 10px 0;
+  
+}
+.menu-list-link{
+position: relative;
+    padding: 0 10px;
+    display: flex;
+overflow: hidden;
+transform: none;
+    align-items: center;
+  
+}
+.menu-list-item>li>a>span{
+    display: block;
+    transform: translateY(0);
+    transition: all .4s;
+}
+.menu-list-item>li:hover>a>span {
+   
+    transform: translateY(100%);
    
 }
 .icons-item{
-    margin-left: 3px;
-    font-size: 18px;
-    width: 18px;
-    height: 18px;
-    color: #2c7ae7;
-    transition: all .4s;
-   
+    color: lightblue;
     margin-right: 0;
-    
+    margin-left: 5px;
 }
-.menu-list-link{
- position: relative;
-    display: flex;
-    color: black;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    overflow: hidden;
-  
-   
+.menu-list-item li:hover>.open-menu{
+display: block;
+
 }
-.menu-list-link>span{
-    transition: all .6s ease;
+.menu-list-item li:hover>a::after{
+ transform: translateY(0%);
+ transition: all .4s;
 }
-.menu-list-link span::after{
+.menu-list-item li>ul>li{
+    padding: 5px 0;
+    margin: 0 10px;
+}
+.menu-list-item li>a::after {
     content: attr(data-title);
     position: absolute;
     left: 0;
     top: 0;
+    transition: all 2s ease;
     transform: translateY(-100%);
+    padding: 0 .625rem;
     width: 100%;
     transition: all .4s;
     color: #2c7ae7;
-    text-align: left;
 }
-.menu-list-link span:hover{
-    transform: translateY(100%);
-}
-.menu-list-link span:hover~.icons-item{
-    transform: rotateX(180deg);
-}
-.open-menu{
-    position: absolute;
-    z-index: 5;
-    top: 100%;
-    background-color: #fff;
-    box-shadow: 0.125rem 0.25rem 1.25rem 0.0875rem rgb(45 45 45 / 13%);
-    min-width: 160px;
-    font-weight: 400;
-   display: none;
-    padding: .75rem 0;
-    transition: all 10s ease-in;
-    cursor: default;
-}
-.menu-list-item>li>ul>li{
-    padding: 8px 25px;
-}
-
-.menu-list-item li a:hover~ul{
-    display: block;
-}
-
 
 /* menu list stop */
 /* slider stsrt */ 
