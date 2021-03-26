@@ -1,3 +1,4 @@
+//dixomatiya usulu ve ya yariya bolme usulu
 let x;
 function f(x){
 
