@@ -1,14 +1,13 @@
-let sezen=document.querySelector('.keypoint')
-let sezens=document.querySelector('.keypoints')
-let sezene=document.querySelector('.keypointe')
-let pinj=document.querySelector('#slider')
-sezen.addEventListener('click',function(){
-    pinj.style.background='url(../img/main-banner-img1.jpg)'
+let keypoint=document.getElementsByClassName('keypoint')
+let slid=document.querySelector('#slider');
+console.log(keypoint[0])
+keypoint[0].addEventListener('click',function(){
+    slid.style.background="url('../img/main-banner-img1.jpg')";
+    keypoint[0].style.background='red'
 })
-sezens.addEventListener('click',function(){
-    pinj.style.background='url(../img/main-banner-img2.jpg)'
+keypoint[1].addEventListener('click',function(){
+    slid.style.background="url('../img/main-banner-img2.jpg')";
 })
-sezene.addEventListener('click',function(){
-    pinj.style.background='url(../img/main-banner-img3.jpg)'
+keypoint[2].addEventListener('click',function(){
+    slid.style.background="url('../img/main-banner-img3.jpg')";
 })
-

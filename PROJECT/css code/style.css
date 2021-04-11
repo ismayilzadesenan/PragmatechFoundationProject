@@ -8,7 +8,7 @@ body{
     padding: 0;
 }
 *{
- transition: all .6s ease;
+
     margin: 0;
     list-style: none;
     padding: 0;
@@ -185,27 +185,14 @@ display: block;
 
 /* menu list stop */
 /* slider stsrt */ 
-.keypoint{
+.slider-move div{
     width: 14px;
     height: 14px;
     background-color: blue;
     border-radius: 50%;
     margin-right: 15px;
 }
-.keypoints{
-    width: 14px;
-    height: 14px;
-    background-color: blue;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-.keypointe{
-    width: 14px;
-    height: 14px;
-    background-color: blue;
-    border-radius: 50%;
-    margin-right: 15px;
-}
+
 #slider{
     width: 100%;
     height: 640px;
@@ -217,6 +204,7 @@ display: block;
     padding: 56px 0;
     display: flex;
     align-items: center;
+    transition: all .1s ease-in-out;
 }
 .slider-move{
  
